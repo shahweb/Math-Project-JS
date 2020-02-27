@@ -1,0 +1,93 @@
+2.  <button id="multiply">Click to multiply</button> //removed the “onClick” attribute in “button” tag.
+
+    <script>
+    const multiplyNums = () => {
+    let num3 = document.getElementById("num3").value;
+    let num4 = document.getElementById("num4").value;
+    let multiply = num3 * num4;
+    document.getElementById("result2").innerHTML = multiply;
+    };
+
+    const btnMultiply = document.getElementById("multiply"); //create a button variable 
+    btnMultiply.addEventListener("click", multiplyNums); //attached button variable to the addEventListener() that listen to for a “click” event.
+    </script>
+
+3. Referencing a function referring to an external function.
+   Invoked (aka called) function is executed when the function is invoked.
+
+    const addNums = () => {
+    let num1 = document.getElementById("num1").value;
+    let num2 = document.getElementById("num2").value;
+    let sum = parseInt(num1) + parseInt(num2);
+    document.getElementById("result").innerHTML = sum;
+    }; //Referenced function 
+    
+    const btnAdd = document.getElementById(“add”);
+    btnAdd.addEventListener(“click”, addNums); //Invoked
+
+4.  //Named functions are functions with a name. 
+    
+    const plus = function add(a, b)
+    {
+    return a+b;
+    };
+
+    //Functions expressions can be named or anonymous.
+    
+    const plus = function(a, b)
+    {
+    return a+b;
+    };
+
+
+5.  //An arrow function expression has a shorter syntax and lexically binds its this value
+    const addNums = () => {
+    let num1 = document.getElementById("num1").value;
+    let num2 = document.getElementById("num2").value;
+    let sum = parseInt(num1) + parseInt(num2);
+    document.getElementById("result").innerHTML = sum;
+    };
+
+    //Named functions are functions with a name. 
+    const addNums = function add(a, b)
+    {
+    return a+b;
+    };
+
+    //Anonymous functions are functions without a name. 
+
+    const addNums = function(a, b)
+    {
+    return a + b
+    };
+
+6. 
+
+7. window.location.reload() provides means to reload the page at current URL.
+    
+    window.location.reload(true); //reloads the page from the server 
+    window.location.reload(false); //reloads the page using the version of the page cached by the browser.
+
+    //example script
+    <script>
+    function reloadThePage(){
+    window.location.reload();
+    } 
+    </script>
+
+8. After creating a remote repository on Github.com. Now, create a new repository on the command line
+
+    git init
+    git add index.html
+    git ls -a
+    git status 
+    git commit -m "first commit"
+    git status
+    git remote add origin https://github.com/shahweb/test-repo.git
+    git push -u origin master 
+
+9. .git folder.
+
+10. Terminal confirms Initialized empty Git repository in folder.
+    rm -rf .git removes Git repository
+    Reinitiate .git by typing git init
