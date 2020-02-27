@@ -61,7 +61,7 @@
     return a + b
     };
 
-6. 
+6. https://github.com/shahweb/shah-ali-wk-three-hw/tree/master/exercise%20toggle-circle-shah
 
 7. window.location.reload() provides means to reload the page at current URL.
     
